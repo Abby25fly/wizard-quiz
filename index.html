@@ -24,34 +24,35 @@
       <div class="text-center logo">
         <img src="img/plane.png" alt="logo">
       </div>
-      <center>
-      <div class="quizContainer">
-        <div class="container">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%">
-              <span class="sr-only">70% Complete</span>
+
+        <section class="quizContainer">
+          <div class="container">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:20%"></div>
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <h1 class="col-md-12 col-xs-12 text-center">¿Cuál es la aerolínea más antigua del mundo?</h1><br><br>
-            <div class="text-center btnOpciones">
-              <button class="col-md-4 col-xs-12">KLM"</button>
-              <button class="col-md-4 col-xs-12">Avianca</button>
-              <button class="col-md-4 col-xs-12">Qantas</button>
+          <div id="contenedor" class="container">
+      			<div id="preguntaText" class="pregunta"></div>
+            <div class="opciones">
+              <label class="option col-md-4 col-xs-12"><input type="radio" name="option" value="1" /> <span id="op1"></span></label>
+        			<label class="option col-md-4 col-xs-12"><input type="radio" name="option" value="2" /> <span id="op2"></span></label>
+        			<label class="option col-md-4 col-xs-12"><input type="radio" name="option" value="3" /> <span id="op3"></span></label>
             </div>
-          </div>
+      			<div>
+              <button id="sigBtn" class="next-btn" onclick="siguientePregunta();">Siguiente</button>
+            </div>
+      		</div>
+      		<div id="result" class="container result" style="display:none;">
+      		</div>
+        </section>
+        <div class="iconos">
+          <a href="#" class="icon fa fa-facebook"></a>
+          <a href="#" class="icon fa fa-twitter"></a>
+          <a href="#" class="icon fa fa-google"></a>
+        </div>
         </div>
       </div>
-     </center>
-      <div class="iconos">
-        <a href="#" class="icon fa fa-facebook"></a>
-        <a href="#" class="icon fa fa-twitter"></a>
-        <a href="#" class="icon fa fa-google"></a>
-      </div>
-    </div>
-  </div>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
